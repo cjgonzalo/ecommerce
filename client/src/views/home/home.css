@@ -1,0 +1,12 @@
+.carousel {
+    height: 25%;
+} 
+
+.carousel-control-prev {
+    height: 25%;
+}
+
+.carousel-control-next {
+    margin-top: 15%;
+    height: 25%;
+}
