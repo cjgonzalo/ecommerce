@@ -17,8 +17,8 @@ app.use(express.static(path.join(__dirname, ".././client/public/")))
 
 // Routes
 app.use("/", require("./routes/home.routes"))
-app.use("/login", require("./routes/login.routes"))
-app.use("/productos", require("./routes/products.routes"))
+app.use("/api/login", require("./routes/login.routes"))
+app.use("/api/productos", require("./routes/products.routes"))
 app.use("/contacto", require("./routes/contact.routes"))
 app.use((req, res) => {
     res.status(404).render("404")
