@@ -12,6 +12,7 @@ import Home from "./views/home/home"
 import About from "./views/about/about"
 import NotFound from "./views/404/404"
 import Footer from "./components/footer/Footer"
+import ProductsPage from "./views/productsPage/productsPage"
 
 function App() {
   return (
@@ -22,11 +23,10 @@ function App() {
           <Route path = "/contacto" element={<Contact />} />
           <Route path = "/login" element={<Login/>} />
           <Route path = "/about" element={<About/>} />
-          <Route path = "/productos/juegos" element={<About/>} />
-          <Route path = "/productos/auriculares" element={<About/>} />
-          <Route path = "/productos/microfonos" element={<About/>} />
-          <Route path = "/productos/gabinetes" element={<About/>} />
-          <Route path = "/productos/sillas-gamer" element={<About/>} />
+          <Route path = "/juegos" element={<ProductsPage type="games"/>} />
+          <Route path = "/auriculares" element={<ProductsPage type="periferics"/>} />
+          <Route path = "/gabinetes" element={<ProductsPage type="cabinets"/>} />
+          <Route path = "/sillas-gamer" element={<ProductsPage type="chairs"/>} />
           <Route path = "/" element={<Home/>} />
           <Route path = "*" element={<NotFound />} />
         </Routes>
