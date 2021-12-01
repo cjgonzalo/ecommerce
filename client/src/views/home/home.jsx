@@ -7,7 +7,11 @@ const home = () => {
     
     return (
         <>
+            <h1 className="text-center">MundoGamer</h1>
             <Carousel/>
+            <ProductsRow />
+            <ProductsRow />
+            <ProductsRow />
             <ProductsRow />
         </>
         
