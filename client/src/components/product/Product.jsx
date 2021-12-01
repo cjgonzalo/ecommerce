@@ -1,15 +1,16 @@
 import React, {useRef} from 'react'
+import "./Product.css"
 
 const Product = ({title, desc, price, image}) => {
 
     const productCard = useRef()
 
     const addShadow = () => {
-        productCard.current.classList.add("shadow-sm")
+        productCard.current.classList.add("shadow")
     }
 
     const removeShadow = () => {
-        productCard.current.classList.remove("shadow-sm")
+        productCard.current.classList.remove("shadow")
     }
 
     return (
