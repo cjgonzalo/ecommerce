@@ -1,8 +1,8 @@
 import React, {useEffect, useRef} from 'react'
-import bannerJuegos from "./../assets/images/banner-juegos.jpg"
-import bannerPerifericos from "./../assets/images/banner-perifericos.jpg"
-import bannerGabinetes from "./../assets/images/banner-gabinetes.jpg"
-import bannerSillas from "./../assets/images/banner-sillas-gamer.jpg"
+import bannerJuegos from "./../../assets/images/banner-juegos.jpg"
+import bannerPerifericos from "./../../assets/images/banner-perifericos.jpg"
+import bannerGabinetes from "./../../assets/images/banner-gabinetes.jpg"
+import bannerSillas from "./../../assets/images/banner-sillas-gamer.jpg"
 import "./Carousel.css"
 
 
