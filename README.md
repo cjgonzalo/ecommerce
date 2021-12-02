@@ -1,0 +1,1 @@
+ecommerce hecho con fines de aprendizaje utilizando el stack MERN (MongoDB, Express, React, Node)
