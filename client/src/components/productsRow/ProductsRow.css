@@ -2,7 +2,17 @@
     padding-bottom: 3%;
 }
 
-.main-container {
+.products-row-container {
     margin-left: 3%;
     margin-right: 3%;
+}
+
+.title {
+    margin-bottom: 1rem;
+}
+
+.title a {
+    text-decoration: none;
+    color: black;
+    font-family: 'MuseoModerno', cursive;
 }
