@@ -15,10 +15,10 @@ const Navbar = () => {
                                 <li className="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle navbar-brand" href="#" id="dropdown-products" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdown-products">
-                                        <li><a class="dropdown-item" href="/productos/juegos">Juegos</a></li>
-                                        <li><a class="dropdown-item" href="/productos/perifericos">Perifericos</a></li>
-                                        <li><a class="dropdown-item" href="/productos/gabinetes">Gabinetes</a></li>
-                                        <li><a class="dropdown-item" href="/productos/sillas-gamer">Sillas Gamer</a></li>
+                                        <li><a class="dropdown-item" href="/juegos">Juegos</a></li>
+                                        <li><a class="dropdown-item" href="/perifericos">Perifericos</a></li>
+                                        <li><a class="dropdown-item" href="/gabinetes">Gabinetes</a></li>
+                                        <li><a class="dropdown-item" href="/sillas-gamer">Sillas Gamer</a></li>
                                     </ul>
                                 </li>
                                 <li className="nav-item">
