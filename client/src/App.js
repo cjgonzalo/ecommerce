@@ -24,7 +24,7 @@ function App() {
           <Route path = "/login" element={<Login/>} />
           <Route path = "/about" element={<About/>} />
           <Route path = "/juegos" element={<ProductsPage type="games"/>} />
-          <Route path = "/auriculares" element={<ProductsPage type="periferics"/>} />
+          <Route path = "/perifericos" element={<ProductsPage type="peripherals"/>} />
           <Route path = "/gabinetes" element={<ProductsPage type="cabinets"/>} />
           <Route path = "/sillas-gamer" element={<ProductsPage type="chairs"/>} />
           <Route path = "/" element={<Home/>} />
