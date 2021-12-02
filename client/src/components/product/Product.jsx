@@ -14,7 +14,7 @@ const Product = ({title, desc, price, image}) => {
     }
 
     return (
-        <div ref={productCard} onMouseEnter={addShadow} onMouseLeave={removeShadow} class="card">
+        <div ref={productCard} onMouseEnter={addShadow} onMouseLeave={removeShadow} class="card h-70 w-75">
             <img src = {image} class="card-img-top" alt={title}/>
             <div class="card-body">
                 <div className="row">
