@@ -7,12 +7,12 @@ const home = () => {
     
     return (
         <>
-            <h1 className="text-center">MundoGamer</h1>
+            <h1 className="text-center title">MundoGamer</h1>
             <Carousel/>
-            <ProductsRow />
-            <ProductsRow />
-            <ProductsRow />
-            <ProductsRow />
+            <ProductsRow title="Juegos"/>
+            <ProductsRow title="Perifericos"/>
+            <ProductsRow title="Gabinetes"/>
+            <ProductsRow title="Sillas Gamer"/>
         </>
         
     )
