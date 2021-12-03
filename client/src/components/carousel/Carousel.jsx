@@ -3,6 +3,7 @@ import bannerJuegos from "./../../assets/images/banner-juegos.jpg"
 import bannerPerifericos from "./../../assets/images/banner-perifericos.jpg"
 import bannerGabinetes from "./../../assets/images/banner-gabinetes.jpg"
 import bannerSillas from "./../../assets/images/banner-sillas-gamer.jpg"
+import {Link} from "react-router-dom"
 import "./Carousel.css"
 
 
@@ -18,28 +19,28 @@ const Carousel = () => {
                             <img src={bannerJuegos} class="d-block w-100" alt="banner juegos"/>
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Juegos</h5>
-                                <a href="/productos/juegos" className="see-more">Ver más</a>
+                                <Link to="/productos/juegos" className="see-more">Ver más</Link>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src={bannerPerifericos} class="d-block w-100" alt="banner perisfericos"/>
                             <div class="carousel-caption d-none d-md-block">
                             <h5>Perifericos</h5>
-                                <a href="/productos/perifericos" className="see-more">Ver más</a>
+                                <Link to="/productos/perifericos" className="see-more">Ver más</Link>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src={bannerGabinetes} class="d-block w-100" alt="banner gabinetes"/>
                             <div class="carousel-caption d-none d-md-block">
                             <h5>Gabinetes</h5>
-                                <a href="/productos/gabinetes" className="see-more">Ver más</a>
+                                <Link to="/productos/gabinetes" className="see-more">Ver más</Link>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src={bannerSillas} class="d-block w-100" alt="banner sillas gamer"/>
                             <div class="carousel-caption d-none d-md-block">
                             <h5>Sillas Gamer</h5>
-                                <a href="/productos/sillas-gamer" className="see-more">Ver más</a>
+                                <Link to="/productos/sillas-gamer" className="see-more">Ver más</Link>
                             </div>
                         </div>
                     </div>
