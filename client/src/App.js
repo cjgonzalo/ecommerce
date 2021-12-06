@@ -1,3 +1,4 @@
+import React from "react"
 import {
   BrowserRouter as Router,
   Routes,
@@ -23,6 +24,7 @@ function App() {
           <Route path = "/contacto" element={<Contact />} />
           <Route path = "/login" element={<Login/>} />
           <Route path = "/about" element={<About/>} />
+          <Route path = "/producto/:id" element={<Contact />} />
           <Route path = "/juegos" element={<ProductsPage type="games"/>} />
           <Route path = "/perifericos" element={<ProductsPage type="peripherals"/>} />
           <Route path = "/gabinetes" element={<ProductsPage type="cabinets"/>} />
