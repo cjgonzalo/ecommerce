@@ -12,45 +12,45 @@ const Carousel = () => {
     return (
         <>
         <div className="container">
-            <section class="carousel-container">
-                <div id="preview-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src={bannerJuegos} class="d-block w-100" alt="banner juegos"/>
-                            <div class="carousel-caption d-none d-md-block">
+            <section className="carousel-container">
+                <div id="preview-carousel" className="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div className="carousel-inner">
+                        <div className="carousel-item active">
+                            <img src={bannerJuegos} className="d-block w-100" alt="banner juegos"/>
+                            <div className="carousel-caption d-none d-md-block">
                                 <h5>Juegos</h5>
                                 <Link to="/productos/juegos" className="see-more">Ver más</Link>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src={bannerPerifericos} class="d-block w-100" alt="banner perisfericos"/>
-                            <div class="carousel-caption d-none d-md-block">
+                        <div className="carousel-item">
+                            <img src={bannerPerifericos} className="d-block w-100" alt="banner perisfericos"/>
+                            <div className="carousel-caption d-none d-md-block">
                             <h5>Perifericos</h5>
                                 <Link to="/productos/perifericos" className="see-more">Ver más</Link>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src={bannerGabinetes} class="d-block w-100" alt="banner gabinetes"/>
-                            <div class="carousel-caption d-none d-md-block">
+                        <div className="carousel-item">
+                            <img src={bannerGabinetes} className="d-block w-100" alt="banner gabinetes"/>
+                            <div className="carousel-caption d-none d-md-block">
                             <h5>Gabinetes</h5>
                                 <Link to="/productos/gabinetes" className="see-more">Ver más</Link>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src={bannerSillas} class="d-block w-100" alt="banner sillas gamer"/>
-                            <div class="carousel-caption d-none d-md-block">
+                        <div className="carousel-item">
+                            <img src={bannerSillas} className="d-block w-100" alt="banner sillas gamer"/>
+                            <div className="carousel-caption d-none d-md-block">
                             <h5>Sillas Gamer</h5>
                                 <Link to="/productos/sillas-gamer" className="see-more">Ver más</Link>
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#preview-carousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
+                    <button className="carousel-control-prev" type="button" data-bs-target="#preview-carousel" data-bs-slide="prev">
+                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span className="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#preview-carousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
+                    <button className="carousel-control-next" type="button" data-bs-target="#preview-carousel" data-bs-slide="next">
+                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span className="visually-hidden">Next</span>
                     </button>
                 </div>
             </section>
