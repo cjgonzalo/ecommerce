@@ -1,6 +1,6 @@
 const express = require("express")
 const router = express.Router()
-const {sendEmail} = require("../controllers/contact.controller")
+const {sendEmail} = require("../controllers/contact.controllers")
 
 router.route("/")
     .post(sendEmail)
