@@ -1,8 +1,8 @@
 const express = require("express")
+const { getFeaturedProducts } = require("../controllers/products.controller")
 const router = express.Router()
 
-router.get("/", (req, res) => {
-    res.render("home")
-})
+router.route("/")
+    .get(getFeaturedProducts)
 
 module.exports = router
