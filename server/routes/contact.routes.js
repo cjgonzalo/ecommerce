@@ -1,8 +1,8 @@
 const express = require("express")
 const router = express.Router()
+const {sendEmail} = require("../controllers/contact.controller")
 
-router.get("/", (req, res) => {
-    res.render("contact")
-})
+router.route("/")
+    .post(sendEmail)
 
 module.exports = router
