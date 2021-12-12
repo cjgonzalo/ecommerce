@@ -1,7 +1,8 @@
 import React, {useRef} from 'react'
+import {Link} from "react-router-dom"
 import "./Product.css"
 
-const Product = ({title, desc, price, image}) => {
+const Product = ({id, title, desc, price, image}) => {
 
     const productCard = useRef()
 
@@ -14,20 +15,22 @@ const Product = ({title, desc, price, image}) => {
     }
 
     return (
-        <div ref={productCard} onMouseEnter={addShadow} onMouseLeave={removeShadow} class="card h-70 w-75">
-            <img src = {image} class="card-img-top" alt={title}/>
-            <div class="card-body">
-                <div className="row">
-                    <div className="col-6">
-                        <h5 class="product-title">{title}</h5>
+        <Link className="link d-flex  justify-content-center" to={`/producto/${id}`}>
+            <div ref={productCard} onMouseEnter={addShadow} onMouseLeave={removeShadow} class="card h-70 w-75">
+                <img src = {image} class="card-img-top" alt={title}/>
+                <div class="card-body">
+                    <div className="row">
+                        <div className="col-6">
+                            <h5 class="product-title">{title}</h5>
+                        </div>
+                        <div className="col-6">
+                            <h5 class="product-price">{price}</h5>
+                        </div>
                     </div>
-                    <div className="col-6">
-                        <h5 class="product-price">{price}</h5>
-                    </div>
-                </div>
-                <p class="product-desc">{desc}</p>
+                    <p class="product-desc">{desc}</p>
+            </div>
         </div>
-    </div>
+    </Link>
     )
 }
 
