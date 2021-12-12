@@ -6,3 +6,13 @@
     cursor: pointer;
     transform: scale(1.05);
 }
+
+.link {
+    text-decoration: none;
+    color: black;
+    width: 120%;
+}
+
+.link:hover {
+    color: inherit;
+}
