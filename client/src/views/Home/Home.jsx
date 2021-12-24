@@ -1,19 +1,22 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import Carousel from '../../components/carousel/Carousel'
-import Featured from '../../components/featured/Featured'
-import "./home.css"
-import axios from "axios"
+import ProductsSection from '../../components/ProductsSection/ProductsSection'
+import "./Home.css"
 
-const home = () => {
+const Home = () => {
 
     return (
         <>
             <h1 className="text-center title">Bienvenido a MundoGamer</h1>
             <Carousel/>
-            <Featured />
+            <ProductsSection title="Destacados" url="http://localhost:4000/api/productos/destacados"/>
+            <ProductsSection title="Juegos" url="http://localhost:4000/api/home/juego"/>
+            <ProductsSection title="Gabinetes" url="http://localhost:4000/api/home/gabinetes"/>
+            <ProductsSection title="Perifericos" url="http://localhost:4000/api/home/perifericos"/>
+            <ProductsSection title="Sillas Gamer" url="http://localhost:4000/api/home/sillasGamer"/>
         </>
         
     )
 }
 
-export default home
+export default Home
