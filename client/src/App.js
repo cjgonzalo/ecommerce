@@ -2,19 +2,17 @@ import React from "react"
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Link,
-  NavLink
+  Route
 } from "react-router-dom";
 import Header from "./components/header/Header"
-import Contact from "./views/contact/contact"
-import Login from "./views/login/login"
-import Home from "./views/home/home"
-import About from "./views/about/about"
+import Contact from "./views/Contact/Contact"
+import Login from "./views/Login/Login"
+import Home from "./views/Home/Home"
+import About from "./views/About/About"
 import NotFound from "./views/404/404"
 import Footer from "./components/footer/Footer"
-import ProductsPage from "./views/productsPage/productsPage"
-import SingleProduct from "./views/singleProduct/singleProduct"
+import ProductsPage from "./views/ProductsPage/ProductsPage"
+import SingleProduct from "./views/ProductPage/ProductPage"
 
 function App() {
   return (
