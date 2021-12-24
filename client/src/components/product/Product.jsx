@@ -15,8 +15,8 @@ const Product = ({id, title, desc, price, image}) => {
     }
 
     return (
-        <Link className="link d-flex  justify-content-center" to={`/producto/${id}`}>
-            <div ref={productCard} onMouseEnter={addShadow} onMouseLeave={removeShadow} class="card h-70 w-75">
+        <Link className="link d-flex justify-content-center" to={`/producto/${id}`}>
+            <div ref={productCard} onMouseEnter={addShadow} onMouseLeave={removeShadow} className="card h-70 w-75">
                 <img src = {image} class="card-img-top" alt={title}/>
                 <div class="card-body">
                     <div className="row">
