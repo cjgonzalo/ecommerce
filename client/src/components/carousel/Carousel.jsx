@@ -19,28 +19,28 @@ const Carousel = () => {
                             <img src={bannerJuegos} className="d-block w-100" alt="banner juegos"/>
                             <div className="carousel-caption d-none d-md-block">
                                 <h5>Juegos</h5>
-                                <Link to="/productos/juegos" className="see-more">Ver más</Link>
+                                <Link to="/juegos" className="see-more">Ver más</Link>
                             </div>
                         </div>
                         <div className="carousel-item">
                             <img src={bannerPerifericos} className="d-block w-100" alt="banner perisfericos"/>
                             <div className="carousel-caption d-none d-md-block">
                             <h5>Perifericos</h5>
-                                <Link to="/productos/perifericos" className="see-more">Ver más</Link>
+                                <Link to="/perifericos" className="see-more">Ver más</Link>
                             </div>
                         </div>
                         <div className="carousel-item">
                             <img src={bannerGabinetes} className="d-block w-100" alt="banner gabinetes"/>
                             <div className="carousel-caption d-none d-md-block">
                             <h5>Gabinetes</h5>
-                                <Link to="/productos/gabinetes" className="see-more">Ver más</Link>
+                                <Link to="/gabinetes" className="see-more">Ver más</Link>
                             </div>
                         </div>
                         <div className="carousel-item">
                             <img src={bannerSillas} className="d-block w-100" alt="banner sillas gamer"/>
                             <div className="carousel-caption d-none d-md-block">
                             <h5>Sillas Gamer</h5>
-                                <Link to="/productos/sillas-gamer" className="see-more">Ver más</Link>
+                                <Link to="/sillas-gamer" className="see-more">Ver más</Link>
                             </div>
                         </div>
                     </div>
