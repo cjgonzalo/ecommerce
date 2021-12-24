@@ -1,8 +1,8 @@
 const express = require("express")
-const { getFeaturedProducts } = require("../controllers/products.controller")
+const { getNewGames, getProductsByType } = require("../controllers/products.controller")
 const router = express.Router()
 
-router.route("/")
-    .get(getFeaturedProducts)
+router.route("/:param")
+    .get(getProductsByType)
 
 module.exports = router
