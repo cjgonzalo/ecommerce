@@ -13,6 +13,7 @@ import NotFound from "./views/404/404"
 import Footer from "./components/footer/Footer"
 import ProductsPage from "./views/ProductsPage/ProductsPage"
 import SingleProduct from "./views/ProductPage/ProductPage"
+import ScrollTopBtn from "./components/ScrollTopBtn/ScrollTopBtn";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path = "/" element={<Home/>} />
           <Route path = "*" element={<NotFound />} />
         </Routes>
+        <ScrollTopBtn />
       </main>
       <Footer />
     </Router>
