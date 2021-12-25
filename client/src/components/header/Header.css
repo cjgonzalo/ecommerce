@@ -1,6 +1,7 @@
 .header {
     background: linear-gradient(rgba(30,122,199,255), rgba(55,156,226,255));
     margin-bottom: 3rem;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 10;
