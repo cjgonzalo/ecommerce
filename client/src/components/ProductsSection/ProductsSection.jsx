@@ -5,7 +5,7 @@ import axios from "axios"
 
 const ProductsSection = ({title, url}) => {
 
-    const [products, setProducts] = useState([])
+    const [products, setProducts] = useState(null)
     
     const fetchData = useCallback(async () => {
         const res = await axios.get(url)
@@ -16,9 +16,9 @@ const ProductsSection = ({title, url}) => {
         fetchData()
     },[fetchData])
 
-    return (
+    return products ?
         <section className="products-row-container">
-            <h1 className="title"><a href={`/${title}`}>{title}</a></h1>
+            <h1 className="title"><a href={`/${title.toLowerCase()}`}>{title}</a></h1>
             <div className="row">
                 {
                     products.map(product => {
@@ -31,7 +31,14 @@ const ProductsSection = ({title, url}) => {
                 }
             </div>
         </section>
-    )
+    :
+        <div className="d-flex justify-content-center">
+            <h1 className="title"><a href={`/${title.toLowerCase()}`}>{title}</a></h1>
+            <br />
+            <div className="spinner-border" role="status">
+                <span className="visually-hidden">Loading...</span>
+            </div>
+        </div>
 }
 
 export default ProductsSection
