@@ -25,10 +25,10 @@ function App() {
           <Route path = "/login" element={<Login/>} />
           <Route path = "/about" element={<About/>} />
           <Route path = "/producto/:id" element={<SingleProduct />} />
-          <Route path = "/juegos" element={<ProductsPage type="games"/>} />
-          <Route path = "/perifericos" element={<ProductsPage type="peripherals"/>} />
-          <Route path = "/gabinetes" element={<ProductsPage type="cabinets"/>} />
-          <Route path = "/sillas-gamer" element={<ProductsPage type="chairs"/>} />
+          <Route path = "/juegos" element={<ProductsPage type="juegos"/>} />
+          <Route path = "/perifericos" element={<ProductsPage type="perifericos"/>} />
+          <Route path = "/gabinetes" element={<ProductsPage type="gabinetes"/>} />
+          <Route path = "/sillasGamer" element={<ProductsPage type="sillas"/>} />
           <Route path = "/" element={<Home/>} />
           <Route path = "*" element={<NotFound />} />
         </Routes>
