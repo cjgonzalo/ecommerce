@@ -3,12 +3,12 @@ import Product from "../product/Product"
 import "./ProductsSection.css"
 import axios from "axios"
 
-const ProductsSection = ({title, url}) => {
+const ProductsSection = ({title, type}) => {
 
     const [products, setProducts] = useState(null)
     
     const fetchData = useCallback(async () => {
-        const res = await axios.get(url)
+        const res = await axios.get(`http://localhost:4000/api/productos/${type}`) 
         setProducts(res.data)
     },[])
 

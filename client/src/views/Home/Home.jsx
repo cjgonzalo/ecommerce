@@ -9,11 +9,11 @@ const Home = () => {
         <>
             <h1 className="text-center title">Bienvenido a MundoGamer</h1>
             <Carousel/>
-            <ProductsSection title="Destacados" url="http://localhost:4000/api/productos/destacados"/>
-            <ProductsSection title="Juegos" url="http://localhost:4000/api/home/juego"/>
-            <ProductsSection title="Gabinetes" url="http://localhost:4000/api/home/gabinetes"/>
-            <ProductsSection title="Perifericos" url="http://localhost:4000/api/home/perifericos"/>
-            <ProductsSection title="Sillas Gamer" url="http://localhost:4000/api/home/sillasGamer"/>
+            <ProductsSection title="Destacados" type="destacados"/>
+            <ProductsSection title="Juegos" type="juego"/>
+            <ProductsSection title="Gabinetes" type="gabinetes"/>
+            <ProductsSection title="Perifericos" type="perifericos"/>
+            <ProductsSection title="Sillas Gamer" type="sillasGamer"/>
         </>
         
     )
