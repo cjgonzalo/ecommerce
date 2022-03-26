@@ -1,0 +1,6 @@
+.login-form-container{
+    /* background: linear-gradient(rgba(30,122,199,255), rgba(55,156,226,255)); */
+    width: 50%;
+    border-radius: 8px;
+    padding: 10px;
+}
